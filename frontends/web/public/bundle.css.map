@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.css"],
+  "sourcesContent": [":root {\n    --color-white: #ffffff;\n    --color-light-grey: #f5f5f5;\n    --color-light-grey-rgb: 245, 245, 245;\n    --overlay-light-grey: rgba(var(--color-light-grey-rgb), 0.6);\n}\n\n@keyframes jiggle {\n    0% { transform: translateX(0); }\n    25% { transform: translateX(-5px); }\n    50% { transform: translateX(0); }\n    75% { transform: translateX(5px); }\n    100% { transform: translateX(0); }\n}\n\n.global-jiggle {\n    animation: jiggle 0.4s ease-in-out 2;\n}\n"],
+  "mappings": "AAAA,MACI,eAAe,QACf,oBAAoB,QACpB,wBAAwB,GAAG,EAAE,GAAG,EAAE,IAClC,sBAAsB,KAAK,IAAI,uBAAuB,EAAE,GAC5D,CAEA,WAAW,OACP,GAAK,UAAW,UAAW,EAAI,CAC/B,IAAM,UAAW,UAAW,KAAO,CACnC,IAAM,UAAW,UAAW,EAAI,CAChC,IAAM,UAAW,UAAW,IAAM,CAClC,GAAO,UAAW,UAAW,EAAI,CACrC,CAEA,CAAC,cACG,UAAW,OAAO,IAAK,YAAY,CACvC",
+  "names": []
+}

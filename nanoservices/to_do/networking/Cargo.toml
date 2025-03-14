@@ -1,0 +1,24 @@
+[package]
+name = "to-do-networking"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9.0"
+dal = { path = "../../../dal/dal" }
+kernel = { path = "../../../dal/kernel" }
+to-do-core = { path = "../core" }
+utils = { path = "../../../crates/utils" }
+base64 = "0.22.0"
+serde = { version = "1.0.217", features = ["derive"] }
+email-core = { path = "../../email/core" }
+
+[dev-dependencies]
+tokio = { version = "1.43.0", features = ["full"] }
+dal-tx-impl = { path = "../../../crates/dal-tx-impl" }
+actix-http = "3.8.0"
+serde_json = "1.0.120"
+chrono = { version = "0.4.39", features = ["serde"] }
+
+[lib]
+doctest = false

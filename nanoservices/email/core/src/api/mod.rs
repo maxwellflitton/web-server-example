@@ -1,0 +1,1 @@
+pub mod mailchimp_emails;

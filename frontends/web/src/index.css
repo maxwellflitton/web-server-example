@@ -1,0 +1,18 @@
+:root {
+    --color-white: #ffffff;
+    --color-light-grey: #f5f5f5;
+    --color-light-grey-rgb: 245, 245, 245;
+    --overlay-light-grey: rgba(var(--color-light-grey-rgb), 0.6);
+}
+
+@keyframes jiggle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+.global-jiggle {
+    animation: jiggle 0.4s ease-in-out 2;
+}

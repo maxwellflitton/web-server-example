@@ -1,0 +1,10 @@
+[package]
+name = "utils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = { version = "4.5.1", optional = false }
+serde = { version = "1.0.197", features = ["derive"] }
+thiserror = "2.0.10"
+compile_api_macros = { path = "../compile_api_macros" }

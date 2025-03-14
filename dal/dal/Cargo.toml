@@ -1,0 +1,17 @@
+[package]
+name = "dal"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde ={ version="1.0.197", features = ["derive"] }
+utils = { path = "../../crates/utils" }
+dal-tx-impl = { path = "../../crates/dal-tx-impl" }
+kernel = { path = "../kernel" }
+
+# for sqlx-postgres
+sqlx = { version = "0.8.3", features = ["postgres", "json", "runtime-tokio"], optional = false }
+once_cell = { version = "1.19.0", optional = false }
+
+[dev-dependencies]
+tokio = { version = "1.43.0", features = ["full"] }

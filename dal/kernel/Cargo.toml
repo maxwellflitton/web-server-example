@@ -1,0 +1,21 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+utils = { path = "../../crates/utils" }
+serde ={ version="1.0.197", features = ["derive"] }
+argon2 = { version = "0.5.3", features = ["password-hash"]}
+uuid = {version = "1.8.0", features = ["serde", "v4"]}
+rand = "0.8.5"
+sqlx = { version = "0.8.3", features = ["runtime-tokio", "macros", "postgres", "json", "chrono"]}
+chrono = { version = "0.4.39", features = ["serde"] }
+actix-web = { version = "4.5.1", optional = false }
+jsonwebtoken = "9.3.0"
+futures = "0.3.31"
+uaparser = "0.6.4"
+tokio = { version = "1.43.0" }
+
+[dev-dependencies]
+serde_json = "1.0.135"

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "CommonJS",
+      "strict": true,
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "declaration": true,
+      "lib": ["ES2015"],
+      "baseUrl": ".",
+      "paths": {
+        "auth/*": ["./auth/*"],
+        "serverApi/*": ["./serverApi/*"],
+      }
+    },
+    "include": ["**/*", "index.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
+  

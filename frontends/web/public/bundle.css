@@ -1,0 +1,2 @@
+:root{--color-white: #ffffff;--color-light-grey: #f5f5f5;--color-light-grey-rgb: 245, 245, 245;--overlay-light-grey: rgba(var(--color-light-grey-rgb), .6)}@keyframes jiggle{0%{transform:translate(0)}25%{transform:translate(-5px)}50%{transform:translate(0)}75%{transform:translate(5px)}to{transform:translate(0)}}.global-jiggle{animation:jiggle .4s ease-in-out 2}
+/*# sourceMappingURL=bundle.css.map */

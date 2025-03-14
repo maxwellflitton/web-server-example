@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "types": ["jest", "node", "react"],
+      "target": "ESNext",                     // Use a modern target
+      "module": "ESNext",                     // Emit native ESM rather than CommonJS
+      "moduleResolution": "bundler",          // Enables TS to read package.json "imports"
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "paths": {
+        "src/*": ["./src/*"]
+      }
+    },
+    "include": ["src", ".storybook"],
+    "exclude": ["node_modules"]
+  }
+  

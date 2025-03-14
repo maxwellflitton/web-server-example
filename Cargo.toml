@@ -1,0 +1,17 @@
+
+[workspace]
+resolver = "2"
+members = [ 
+    "dal/dal",
+    "ingress", 
+    "dal/kernel", 
+    "nanoservices/auth/core", 
+    "nanoservices/auth/networking", 
+    "nanoservices/email/core", 
+    "nanoservices/to_do/core",
+    "nanoservices/to_do/networking",
+    "crates/dal-tx-impl",
+    "crates/event-subscriber",
+    "crates/publish-event",
+    "crates/utils", "crates/compile_api_macros",
+]

@@ -1,0 +1,17 @@
+[package]
+name = "email-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dal = { path = "../../../dal/dal" }
+kernel = { path = "../../../dal/kernel" }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = { version = "1.0.137" }
+utils = { path = "../../../crates/utils" }
+reqwest = { version = "0.12.12", features = ["json"] }
+chrono = { version = "0.4.39", features = ["serde"] }
+dal-tx-impl = { path = "../../../crates/dal-tx-impl" }
+
+[dev-dependencies]
+tokio = { version = "1.43.0", features = ["full"] }

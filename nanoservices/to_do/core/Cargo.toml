@@ -1,0 +1,18 @@
+[package]
+name = "to-do-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dal = { path = "../../../dal/dal" }
+kernel = { path = "../../../dal/kernel" }
+serde = { version = "1.0.197", features = ["derive"] }
+utils = { path = "../../../crates/utils" }
+email-core = { path = "../../email/core" }
+uuid = {version = "1.8.0", features = ["serde", "v4"]}
+
+
+[dev-dependencies]
+tokio = { version = "1.43.0", features = ["full"] }
+dal-tx-impl = { path = "../../../crates/dal-tx-impl" }
+chrono = { version = "0.4.39", features = ["serde"] }
